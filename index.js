@@ -13,7 +13,7 @@ initializeApp({
   credential: applicationDefault()
 });
 
-var whitelist = ['http://localhost:80', 'http://localhost:3000', 'http://localhost/microservice2', 'http://localhost/microservice1']
+var whitelist = ['http://34.160.109.71:80', 'http://34.160.109.71:3000', 'http://34.160.109.71/microservice2', 'http://34.160.109.71/microservice1']
 var corsOptions = {
   origin: function (origin, callback) {
     if (whitelist.indexOf(origin) !== -1) {
