@@ -17,9 +17,9 @@ spec:
         image: my-app-image
         ports:
           - containerPort: 80
-        readinessProbe:
-          failureThreshold: 3
-          httpGet:
-            path: /readiness
-            port: 80
-            scheme: HTTP
+        #readinessProbe:
+         # failureThreshold: 3
+          #httpGet:
+           # path: /readiness
+            #port: 80
+            #scheme: HTTP
