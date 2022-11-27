@@ -29,6 +29,9 @@ var corsOptions = {
   keyFilename: '/Users/samyfadel/Downloads/gkemedium-1d285a7a4755.json',
 }); */
 
+app.get('/readiness', cors(corsOptions), (req, res) => {
+    res.send('<h1>pod container is ready!</h1>');
+ });
 
 app.post('/microservice2', cors(corsOptions), (req,res) => {
 

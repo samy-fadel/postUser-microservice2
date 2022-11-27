@@ -20,6 +20,6 @@ spec:
         readinessProbe:
           failureThreshold: 3
           httpGet:
-            path: /microservice2
+            path: /readiness
             port: 80
             scheme: HTTP
