@@ -23,7 +23,7 @@ spec:
                 memory: "2Gi"
               limits:
                 memory: "2Gi"
-                cpu: "4000m"
+                cpu: "2000m"
         ports:
           - containerPort: 80
         readinessProbe:
