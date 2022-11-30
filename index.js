@@ -4,7 +4,7 @@ const port = 80;
 const Firestore = require('@google-cloud/firestore');
 //var cors = require('cors');
 //app.options('*', cors());
-app.use(require('body-parser').json());
+app.use(require('body-parser').json()); //ok
 
 const { initializeApp, applicationDefault, cert } = require('firebase-admin/app');
 const { getFirestore, Timestamp, FieldValue } = require('firebase-admin/firestore');
