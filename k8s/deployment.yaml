@@ -1,22 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: microservice1
+  name: microservice2
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: microservice1
+      app: microservice2
   template:
     metadata:
       labels:
-        app: microservice1
+        app: microservice2
     spec:
       serviceAccountName: microservice1
-      #nodeSelector:
-       # cloud.google.com/compute-class: "Scale-Out"
       containers:
-      - name: microservice1
+      - name: microservice2
         image: my-app-image
         resources:
               requests:
@@ -29,7 +27,6 @@ spec:
           - containerPort: 80
         readinessProbe:
           failureThreshold: 3
-         # initialDelaySeconds: 30
           httpGet:
             path: /readiness
             port: 80
