@@ -12,6 +12,7 @@ spec:
       labels:
         app: microservice1
     spec:
+      serviceAccountName: microservice1
       #nodeSelector:
        # cloud.google.com/compute-class: "Scale-Out"
       containers:
